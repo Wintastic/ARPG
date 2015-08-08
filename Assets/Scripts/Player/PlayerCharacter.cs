@@ -43,6 +43,7 @@ public class PlayerCharacter : MonoBehaviour
 		
 		m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 		m_OrigGroundCheckDistance = m_GroundCheckDistance;
+		
 	}
 	
 	public void Move (Vector3 move, bool crouch, bool jump)

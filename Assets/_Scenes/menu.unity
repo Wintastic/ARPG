@@ -222,11 +222,11 @@ MonoBehaviour:
   m_SendPeerInfo: 0
   m_MaxDelay: .00999999978
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 174642, guid: 639bcbd9ecbafd34a9cf67b75aa3745c, type: 2}
+  m_PlayerPrefab: {fileID: 151732, guid: 9e7222b97bed8c84e96419f47424e662, type: 2}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
   m_OfflineScene: menu
-  m_OnlineScene: multiplayerTest
+  m_OnlineScene: sandbox
   m_SpawnPrefabs: []
   m_CustomConfig: 0
   m_MaxConnections: 4
