@@ -1,0 +1,422 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &136572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 427748}
+  - 20: {fileID: 2030626}
+  - 124: {fileID: 12439532}
+  - 92: {fileID: 9269308}
+  - 81: {fileID: 8143506}
+  m_Layer: 0
+  m_Name: PlayerCamera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &165170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 476890}
+  - 95: {fileID: 9527236}
+  - 54: {fileID: 5426398}
+  - 136: {fileID: 13681480}
+  - 114: {fileID: 11472472}
+  - 114: {fileID: 11401386}
+  - 114: {fileID: 11455608}
+  - 114: {fileID: 11426542}
+  - 114: {fileID: 11450962}
+  - 114: {fileID: 11417168}
+  - 114: {fileID: 11447468}
+  m_Layer: 0
+  m_Name: VoxPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &427748
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136572}
+  m_LocalRotation: {x: .382683456, y: 0, z: 0, w: .923879504}
+  m_LocalPosition: {x: 0, y: 8, z: -8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 476890}
+  m_RootOrder: 0
+--- !u!4 &476890
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .92120415, y: -1.0179813e-18, z: 2.29229021}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 427748}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!20 &2030626
+Camera:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136572}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
+--- !u!54 &5426398
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165170}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!81 &8143506
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136572}
+  m_Enabled: 1
+--- !u!92 &9269308
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136572}
+  m_Enabled: 1
+--- !u!95 &9527236
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165170}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: b235179bd2a63d1468dd430670338c55, type: 3}
+  m_Controller: {fileID: 9100000, guid: e2cf68ff4b1ffda45a77f7307dd789b9, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: '
+
+    Transform ''EthanLeftToe1'' has been deleted
+
+    Transform ''EthanLeftFoot'' has been deleted
+
+    Transform ''EthanLeftLeg'' has been deleted
+
+    Transform ''EthanLeftUpLeg'' has been deleted
+
+    Transform ''EthanRightToe1'' has been deleted
+
+    Transform ''EthanRightFoot'' has been deleted
+
+    Transform ''EthanRightLeg'' has been deleted
+
+    Transform ''EthanRightUpLeg'' has been deleted
+
+    Transform ''EthanJaw'' has been deleted
+
+    Transform ''EthanLeftEye'' has been deleted
+
+    Transform ''EthanRightEye'' has been deleted
+
+    Transform ''EthanHead'' has been deleted
+
+    Transform ''EthanLeftHandIndex3'' has been deleted
+
+    Transform ''EthanLeftHandIndex2'' has been deleted
+
+    Transform ''EthanLeftHandIndex1'' has been deleted
+
+    Transform ''EthanLeftHandMiddle3'' has been deleted
+
+    Transform ''EthanLeftHandMiddle2'' has been deleted
+
+    Transform ''EthanLeftHandMiddle1'' has been deleted
+
+    Transform ''EthanLeftHandPinky3'' has been deleted
+
+    Transform ''EthanLeftHandPinky2'' has been deleted
+
+    Transform ''EthanLeftHandPinky1'' has been deleted
+
+    Transform ''EthanLeftHandRing3'' has been deleted
+
+    Transform ''EthanLeftHandRing2'' has been deleted
+
+    Transform ''EthanLeftHandRing1'' has been deleted
+
+    Transform ''EthanLeftHandThumb3'' has been deleted
+
+    Transform ''EthanLeftHandThumb2'' has been deleted
+
+    Transform ''EthanLeftHandThumb1'' has been deleted
+
+    Transform ''EthanLeftHand'' has been deleted
+
+    Transform ''EthanLeftForeArm'' has been deleted
+
+    Transform ''EthanLeftArm'' has been deleted
+
+    Transform ''EthanLeftShoulder'' has been deleted
+
+    Transform ''EthanRightHandIndex3'' has been deleted
+
+    Transform ''EthanRightHandIndex2'' has been deleted
+
+    Transform ''EthanRightHandIndex1'' has been deleted
+
+    Transform ''EthanRightHandMiddle3'' has been deleted
+
+    Transform ''EthanRightHandMiddle2'' has been deleted
+
+    Transform ''EthanRightHandMiddle1'' has been deleted
+
+    Transform ''EthanRightHandPinky3'' has been deleted
+
+    Transform ''EthanRightHandPinky2'' has been deleted
+
+    Transform ''EthanRightHandPinky1'' has been deleted
+
+    Transform ''EthanRightHandRing3'' has been deleted
+
+    Transform ''EthanRightHandRing2'' has been deleted
+
+    Transform ''EthanRightHandRing1'' has been deleted
+
+    Transform ''EthanRightHandThumb3'' has been deleted
+
+    Transform ''EthanRightHandThumb2'' has been deleted
+
+    Transform ''EthanRightHandThumb1'' has been deleted
+
+    Transform ''EthanRightHand'' has been deleted
+
+    Transform ''EthanRightForeArm'' has been deleted
+
+    Transform ''EthanRightArm'' has been deleted
+
+    Transform ''EthanRightShoulder'' has been deleted
+
+    Transform ''EthanNeck'' has been deleted
+
+    Transform ''EthanSpine2'' has been deleted
+
+    Transform ''EthanSpine1'' has been deleted
+
+    Transform ''EthanSpine'' has been deleted
+
+    Transform ''EthanHips'' has been deleted
+
+    Transform ''EthanSkeleton'' has been deleted'
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11401386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343b24e1ad4f4274f8d5011524d5a800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MovingTurnSpeed: 360
+  m_StationaryTurnSpeed: 180
+  m_JumpPower: 6
+  m_GravityMultiplier: 2
+  m_RunCycleLegOffset: .200000003
+  m_MoveSpeedMultiplier: 1
+  m_AnimSpeedMultiplier: 1
+  m_GroundCheckDistance: .300000012
+--- !u!114 &11417168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b089e283a0b4347983cbd574de9e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11426542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 3
+  m_SendInterval: .100000001
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: .00100000005
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 10
+  m_InterpolateMovement: 1
+--- !u!114 &11447468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396a467cba56ed449b1a5352fa2b0685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  model: {fileID: 4900000, guid: 0cda94553d858b446af78b5234bb8711, type: 3}
+  material: {fileID: 0}
+--- !u!114 &11450962
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 9527236}
+  m_ParameterSendBits: 0
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
+--- !u!114 &11455608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 41
+    i1: 123
+    i2: 11
+    i3: 23
+    i4: 49
+    i5: 206
+    i6: 38
+    i7: 100
+    i8: 171
+    i9: 100
+    i10: 7
+    i11: 46
+    i12: 168
+    i13: 243
+    i14: 69
+    i15: 142
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
+--- !u!114 &11472472
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c598563e25c9049868521d6a3a0927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!124 &12439532
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136572}
+  m_Enabled: 1
+--- !u!136 &13681480
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .300000012
+  m_Height: 1.60000002
+  m_Direction: 1
+  m_Center: {x: 0, y: .800000012, z: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: model
+      value: 
+      objectReference: {fileID: 4900000, guid: 0cda94553d858b446af78b5234bb8711, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 165170}
+  m_IsPrefabParent: 1
