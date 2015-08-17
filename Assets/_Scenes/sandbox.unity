@@ -137,7 +137,7 @@ MonoBehaviour:
   m_SendPeerInfo: 0
   m_MaxDelay: .00999999978
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 151732, guid: 9e7222b97bed8c84e96419f47424e662, type: 2}
+  m_PlayerPrefab: {fileID: 197784, guid: c6b80b85a812f1c4c931a46936b98d72, type: 2}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
   m_OfflineScene: sandbox
